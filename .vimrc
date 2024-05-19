@@ -12,11 +12,11 @@ inoremap ;; <C-n>
 set novisualbell
 set background=dark
 set pastetoggle=<F2>
-set tabstop=4
+set tabstop=2
 set smarttab
 set undofile
 set undodir=~/.vim/undodir
-set shiftwidth=4
+set shiftwidth=2
 set expandtab
 set guioptions-=r
 set guioptions-=R
