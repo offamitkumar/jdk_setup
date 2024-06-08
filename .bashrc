@@ -92,8 +92,8 @@ export CLICOLOR=1
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
-EDITOR=vim
-GIT_EDITOR=vim
+export EDITOR=vim
+export GIT_EDITOR=vim
 
 alias t0='tmux attach-session -t0'
 alias j="cd $HOME/jdk/"
@@ -102,10 +102,14 @@ alias f='find . -name '
 alias c='clear'
 alias cpu='cd /home/amit/jdk/src/hotspot/cpu/s390'
 export LD_LIBRARY_PATH=$HOME/OpenJDK-Test-Reports/hsdis-s390x.so
+alias cph='cp $HOME/OpenJDK-Test-Reports/hsdis-s390x.so .'
 alias mi='make images'
 alias mc='make clean && make dist-clean'
-alias mt='./conf.sh && mi && make test TEST=jtreg:$(f TestSigInfoInHsErrFile.java)'
 alias fast='export CONF="linux-s390x-server-fastdebug"'
 alias slow='export CONF="linux-s390x-server-slowdebug"'
 alias rel='export CONF="linux-s390x-server-release"'
 alias opt='export CONF="linux-s390x-server-optimized"'
+alias ma='vim $(f macroAssembler_s390.cpp)'
+export PATH=/home/amit/golang/go/bin:$PATH
+# export JTREG_RETAIN=all
+# export JTREG_VERBOSE=all
